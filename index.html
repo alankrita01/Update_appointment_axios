@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Appointment Booking App</title>
+    <!--link rel="stylesheet" href="index.css"-->
+  </head>
+  <body>
+    <header>
+      <h1>Appointment Booking App</h1>
+    </header>
+
+    <section class="container" >
+      <form id="my-form" onsubmit="saveToLocalStorage(event)">
+
+        
+        <label>User name</label>
+        <input type="text" name="username" id="username">
+        
+        <label>E-mail</label>
+        <input type="text" name="emailId" id="email">
+
+        <input class="btn" type="submit" value="Submit">
+
+        
+      </form>
+      <ul id="listOfUser"> </ul>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
